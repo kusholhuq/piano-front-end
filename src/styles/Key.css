@@ -4,3 +4,12 @@
   width: 60px;
   border:2px solid black;
 }
+
+.key-text {
+  position: relative;
+  color: black;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 240px;
+  pointer-events: none;
+}
