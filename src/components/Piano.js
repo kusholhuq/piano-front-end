@@ -1,23 +1,23 @@
 import React from 'react';
 import { Key } from './Key';
 import '../styles/Piano.css';
+import { NOTES } from '../global/constants';
 
 class Piano extends React.Component {
   render() {
+
+    const keys = NOTES.map((note, index) => {
+      return (
+        <Key
+          key={index}
+          note={note}
+        />
+      );
+    })
+
     return (
       <div className="piano">
-        <Key note="c"/>
-        <Key note="df"/>
-        <Key note="d"/>
-        <Key note="ef"/>
-        <Key note="e"/>
-        <Key note="f"/>
-        <Key note="gf"/>
-        <Key note="g"/>
-        <Key note="af"/>
-        <Key note="a"/>
-        <Key note="bf"/>
-        <Key note="b"/>
+        {keys}
       </div>
     )
   }
