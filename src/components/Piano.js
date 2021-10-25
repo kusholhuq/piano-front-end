@@ -1,7 +1,7 @@
 import React from 'react';
 import { Key } from './Key';
 import '../styles/Piano.css';
-import { NOTES } from '../global/constants';
+import { NOTES, VALID_KEYS, KEY_TO_NOTE } from '../global/constants';
 
 class Piano extends React.Component {
 
@@ -12,6 +12,33 @@ class Piano extends React.Component {
     };
   }
 
+  componentDidMount = () => {
+    window.addEventListener('keydown', this.handleKeyDown);
+    window.addEventListener('keyup', this.handleKeyUp);
+  }
+
+  handleKeyDown = (event) => {
+    if (event.repeat) {
+      return;
+    }
+    const key = event.key;
+    const updatedPressedKeys = [...this.state.pressedKeys];
+    if (!updatedPressedKeys.includes(key) && VALID_KEYS.includes(key)){
+      updatedPressedKeys.push(key);
+    }
+    this.setState({
+      pressedKeys: updatedPressedKeys
+    })
+  }
+
+  handleKeyUp = (event) => {
+    const index = this.state.pressedKeys.indexOf(event.key);
+    if(index > -1){
+      this.setState(state => ({
+        pressedKeys: state.pressedKeys.splice(index, 1)
+      }))
+    }
+  }
 
 
   render() {

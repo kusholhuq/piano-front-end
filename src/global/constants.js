@@ -32,7 +32,9 @@ const NOTE_TO_KEY = {
   b  : 'm'
 }
 
+const VALID_BLACK_KEYS = ['s', 'd', 'g', 'h', 'j'];
+const VALID_WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm'];
+const VALID_KEYS = [...VALID_BLACK_KEYS, ...VALID_WHITE_KEYS];
 
 
-
-export { NOTES, KEY_TO_NOTE, NOTE_TO_KEY };
+export { NOTES, KEY_TO_NOTE, NOTE_TO_KEY, VALID_KEYS };
