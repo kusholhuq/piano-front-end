@@ -12,6 +12,13 @@ class Piano extends React.Component {
     };
   }
 
+  playNote = (note) => {
+    if(note){
+      const noteAudio = new Audio(document.getElementById(note).src);
+      noteAudio.play();
+    }
+  }
+
 
 
   handleKeyDown = (event) => {
@@ -26,6 +33,7 @@ class Piano extends React.Component {
     this.setState({
       pressedKeys: updatedPressedKeys
     })
+    this.playNote(KEY_TO_NOTE[key]);
   }
 
   handleKeyUp = (event) => {
@@ -61,9 +69,24 @@ class Piano extends React.Component {
       );
     })
 
+    const audioFiles = NOTES.map((note, index) => {
+      return (
+        <audio
+          id={note}
+          key={index}
+          src={`../../notes/${note}.mp3`}
+        />
+      );
+    });
+
     return (
-      <div className="piano">
-        {keys}
+      <div>
+        <div className="piano">
+          {keys}
+        </div>
+        <div>
+          {audioFiles}
+        </div>
       </div>
     )
   }
