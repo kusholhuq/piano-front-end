@@ -35,4 +35,4 @@ const NOTE_TO_KEY = {
 
 
 
-export { NOTES };
+export { NOTES, KEY_TO_NOTE, NOTE_TO_KEY };
