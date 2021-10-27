@@ -81,3 +81,14 @@ Feature list moving forward
 -improved sounds
   -higher quality sounds
   -sounds last longer
+
+-different sound qualites
+  -synth
+  -acoustic
+  -something crazy like rock
+
+  https://github.com/fuhton/piano-mp3/tree/master/piano-mp3
+  consider drawing from this for piano notes for the dual octave
+
+  https://archive.org/details/24-piano-keys/key11.mp3
+  this one provides 24 keys
