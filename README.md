@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Feature list moving forward
+
+-Landing page
+-multiple key layout options
+  -classic 1 octave
+  -10 keys in a row
+  -two octaves far apart
+-header with key options
+-improved sounds
+  -higher quality sounds
+  -sounds last longer
