@@ -6,6 +6,7 @@ export default function Header(){
     <div className="navbar">
       <div className="half">
         <div>Melody</div>
+        <div><i class="fas fa-ruler-horizontal"></i></div>
       </div>
       <div className="half justify-right">
         <div className="navbar-items">Piano Type</div>
