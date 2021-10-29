@@ -7,7 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header/>
-        <Piano/>
+        <div className="mt-5">
+          <Piano />
+        </div>
+
       </header>
     </div>
   );

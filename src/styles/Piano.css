@@ -1,4 +1,7 @@
 .piano {
   display: flex;
   flex-direction: row;
+  position: relative;
+  left: 36%;
+  text-align: center;
 }
