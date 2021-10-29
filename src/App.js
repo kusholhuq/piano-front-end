@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header/>
-        <div className="mt-5">
+        <div className="piano-container">
           <Piano />
         </div>
 
