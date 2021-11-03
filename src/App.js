@@ -1,6 +1,7 @@
 import './App.css';
 import { Piano } from './components/Piano';
 import Header from './components/Header';
+import Landing from './components/Landing';
 import React from 'react';
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
     let currentView;
     switch (view) {
       case 'landing page':
-        currentView = <div>This is your landing page substitute</div>;
+        currentView = <Landing/>;
         break;
       case 'piano':
         currentView = (
