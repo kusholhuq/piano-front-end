@@ -6,7 +6,9 @@ export default function Landing () {
 
   return (
     <div>
-      Landing page component
+      <h1 className="pac">Melody</h1>
+      <p className="rob">Play a tune on our virtual piano</p>
+      <button className="rob">Get Started</button>
     </div>
   )
 
