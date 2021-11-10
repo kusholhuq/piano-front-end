@@ -3,6 +3,7 @@ import { Piano } from './components/Piano';
 import Header from './components/Header';
 import Landing from './components/Landing';
 import React from 'react';
+import {Fragment} from 'react';
 
 class App extends React.Component {
 
@@ -29,7 +30,6 @@ class App extends React.Component {
       case 'piano':
         currentView = (
           <div className="App">
-              <Header />
             <div className="piano-container">
               <Piano />
             </div>
@@ -39,7 +39,11 @@ class App extends React.Component {
     }
 
     return (
-      currentView
+      <Fragment>
+        <Header/>
+        {currentView}
+      </Fragment>
+
     );
   }
 
