@@ -73,6 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Feature list moving forward
 
 -Landing page
+-keys are clickable
 -multiple key layout options
   -classic 1 octave
   -10 keys in a row

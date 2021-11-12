@@ -5,5 +5,21 @@
 }
 
 .landing-container {
+  text-align: center;
+  margin-top: 3rem;
+}
 
+.mt-2 {
+  margin-top: 5rem;
+}
+
+.title {
+  font-size: 6rem;
+}
+
+.get-started {
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid grey;
 }
