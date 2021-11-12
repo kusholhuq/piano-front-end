@@ -59,6 +59,9 @@ class Piano extends React.Component {
 
   render() {
 
+    //here the NOTES array is converted into keys, we just need to switch another array
+    //in here, and prepare more global constant for different arrangements of keys
+
     const keys = NOTES.map((note, index) => {
       return (
         <Key

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+.rob {
+  font-family: 'Roboto';
+}
+
+.background {
+  /* background-image: url("./../assets/landing1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  height: 87vh;
+}
+
+.landing-container {
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  background-color: rgba(255,255,255, .7);
+  width: 30rem;
+  height: 22rem;
+  border-radius: 10px;
+}
+
+.mt-2 {
+  margin-top: 5rem;
+}
+
+.title {
+  position: relative;
+  top: 2rem;
+  font-size: 6rem;
+}
+
+.sub-title {
+  position: relative;
+  top: 1.5rem;
+}
+
+.get-started {
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 0px solid grey;
+  position: relative;
+  top: 2.5rem;
+}
