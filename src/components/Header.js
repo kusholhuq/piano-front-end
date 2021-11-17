@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
 
-export default function Header(){
+export default function Header(props){
   return (
     <div className="navbar">
       <div className="half">
@@ -9,8 +9,18 @@ export default function Header(){
         <h2 className="pac mt-1">Melody</h2>
       </div>
       <div className="half justify-right">
-        <div className="navbar-items">Piano Type</div>
-        <div className="navbar-items">Landing Page</div>
+        <div
+        onClick={() => { props.setView("piano") }}
+        className="navbar-items"
+        >
+          Piano
+        </div>
+        <div
+        onClick = {() => {props.setView("landing page")}}
+        className="navbar-items"
+        >
+          Home
+        </div>
       </div>
     </div>
   );
