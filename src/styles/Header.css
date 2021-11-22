@@ -28,3 +28,7 @@
 .test {
  font-family: 'Pacifico';
 }
+
+.justify-left {
+  justify-content: left;
+}
