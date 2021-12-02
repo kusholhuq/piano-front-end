@@ -25,7 +25,7 @@ class App extends React.Component {
     let currentView;
     switch (view) {
       case 'landing page':
-        currentView = <Landing/>;
+        currentView = <Landing setView = {this.setView} />;
         break;
       case 'piano':
         currentView = (
@@ -40,7 +40,7 @@ class App extends React.Component {
 
     return (
       <Fragment>
-        <Header/>
+        <Header setView = {this.setView} />
         {currentView}
       </Fragment>
 
