@@ -82,6 +82,7 @@ Feature list moving forward
 -improved sounds
   -higher quality sounds
   -sounds last longer
+-volume slider
 
 -different sound qualites
   -synth
