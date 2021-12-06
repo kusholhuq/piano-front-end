@@ -55,7 +55,9 @@ class Piano extends React.Component {
   componentDidMount = () => {
     window.addEventListener('keydown', this.handleKeyDown);
     window.addEventListener('keyup', this.handleKeyUp);
+
   }
+
 
   render() {
 
@@ -72,6 +74,7 @@ class Piano extends React.Component {
       );
     })
 
+
     const audioFiles = NOTES.map((note, index) => {
       return (
         <audio
@@ -85,6 +88,7 @@ class Piano extends React.Component {
     const instructions = (
       <p>You can use your keyboard to press the piano keys</p>
     )
+
 
     const instructionKeys = (
       <div className="instructionKeys">
