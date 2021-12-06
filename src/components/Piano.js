@@ -82,10 +82,17 @@ class Piano extends React.Component {
       );
     });
 
+    const instructions = (
+      <div>test</div>
+    )
+
     return (
       <div>
         <div className="piano">
           {keys}
+        </div>
+        <div>
+          {instructions}
         </div>
         <div>
           {audioFiles}
