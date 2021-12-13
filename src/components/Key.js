@@ -14,6 +14,9 @@ class Key extends React.Component {
 
   render() {
 
+    const keyboardKey = NOTE_TO_KEY[this.props.note].toUpperCase();
+
+
     let keyClassName = "key";
 
     const noteIsFlat = this.noteIsFlat(this.props.note);
@@ -28,13 +31,15 @@ class Key extends React.Component {
     let key;
     if (noteIsFlat) {
       key = (
-        <div className={keyClassName}></div>
+        <div className={keyClassName}>
+          <div className="button-flat">{keyboardKey}</div>
+        </div>
       )
     } else {
       key = (
         <div className={keyClassName}>
           <div className="key-text">
-            {this.props.note.toUpperCase()}
+            <div className="button">{keyboardKey}</div>
           </div>
         </div>
       )
