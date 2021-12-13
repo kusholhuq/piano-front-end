@@ -14,6 +14,10 @@ class Key extends React.Component {
 
   render() {
 
+    const button = (
+      <span>{NOTE_TO_KEY[this.props.note]}</span>
+    )
+
     let keyClassName = "key";
 
     const noteIsFlat = this.noteIsFlat(this.props.note);
