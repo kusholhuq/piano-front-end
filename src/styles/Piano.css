@@ -12,3 +12,9 @@
   height: 1rem;
   width: 1rem;
 }
+
+.instructions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}

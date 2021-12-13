@@ -31,23 +31,30 @@
 }
 
 .button {
-  background-color: red;
-  height: 1.9rem;
-  width: 2rem;
+  background-color: white;
+  height: 2.5rem;
+  width: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  top: 1rem;
+  top: .5rem;
+  border-radius: 5px;
+  border: black solid 2px;
+  color: black;
 }
 
 .button-flat {
-  background-color: red;
+  background-color: black;
   position: relative;
-  top: 165px;
+  top: 170px;
   height: 23px;
   width: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 5px;
+  border: white solid 2px;
+  color: white;
+
 }
