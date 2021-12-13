@@ -3,6 +3,8 @@
   height: 300px;
   width: 60px;
   border:2px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .key-text {
@@ -26,4 +28,26 @@
 
 .key.pressed, .key.flat.pressed {
   background-color: #00d8ff;
+}
+
+.button {
+  background-color: red;
+  height: 1.9rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 1rem;
+}
+
+.button-flat {
+  background-color: red;
+  position: relative;
+  top: 165px;
+  height: 23px;
+  width: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
