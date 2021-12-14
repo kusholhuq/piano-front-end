@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Landing.css';
-
+import reactLogo from '../assets/react.jpg';
 
 export default function Landing (props) {
 
@@ -15,6 +15,16 @@ export default function Landing (props) {
         >
           Get Started
         </button>
+      </div>
+      <div className="landing-info">
+        <div className="row">
+          <div className="circle img-1"></div>
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
+        <div className="info">
+          info
+        </div>
       </div>
     </div>
 
