@@ -45,4 +45,14 @@
   border: 0px solid grey;
   position: relative;
   top: 2.5rem;
+  transition: ease-in-out all 0.2s;
+
+}
+
+.get-started:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out all 0.2s;
+  box-shadow: 1px 1px 4px;
+  /* background-color: rgba(255,255,255, 0); */
 }
