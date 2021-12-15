@@ -64,12 +64,27 @@
 .circle {
   height: 130px;
   width: 130px;
-  border: solid lightgoldenrodyellow 3px;
+  border: solid lightgoldenrodyellow 5px;
   border-radius: 50%;
   background-size: cover;
+
 
 }
 
 .img-1 {
   background-image: url("../assets/react.jpg");
+  background-position: center;
+  background-size: 240%;
+}
+
+.img-2 {
+  background-image: url("../assets/keyboard.jpg");
+  background-position: center;
+
+}
+
+.img-3 {
+  background-image: url("../assets/kushol-h.jpg");
+  background-position: 35% 0;
+
 }

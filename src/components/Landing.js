@@ -19,8 +19,8 @@ export default function Landing (props) {
       <div className="landing-info">
         <div className="row">
           <div className="circle img-1"></div>
-          <div className="circle"></div>
-          <div className="circle"></div>
+          <div className="circle img-2"></div>
+          <div className="circle img-3"></div>
         </div>
         <div className="info">
           info
