@@ -17,13 +17,20 @@ export default function Landing (props) {
         </button>
       </div>
       <div className="landing-info">
-        <div className="row">
+        <div className="row circles">
           <div className="circle img-1"></div>
-          <div className="circle img-2"></div>
           <div className="circle img-3"></div>
+          <div className="circle img-2"></div>
         </div>
         <div className="info">
-          info
+          <p>
+            Melody is a virtual piano powered by react.
+          </p>
+          <p>
+          This web app was a place for me to bring my passion for music and front end development together.
+          </p>
+        </div>
+        <div className="landing-gif">
         </div>
       </div>
     </div>

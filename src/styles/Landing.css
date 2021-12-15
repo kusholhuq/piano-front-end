@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat; */
   display: flex;
-  justify-content: center;
+  justify-content: center ;
   height: 87vh;
 }
 
@@ -18,9 +18,15 @@
   position: relative;
   top: 3rem;
   background-color: rgba(255,255,255, .7);
-  width: 30rem;
+  width: 30%;
   height: 22rem;
   border-radius: 10px;
+  margin-right: 10%;
+}
+
+.landing-info {
+  width: 30%;
+  margin-top: 2rem;
 }
 
 .mt-2 {
@@ -87,4 +93,21 @@
   background-image: url("../assets/kushol-h.jpg");
   background-position: 35% 0;
 
+}
+
+.circles {
+  justify-content: space-around;
+}
+
+
+
+.info {
+  margin-top: 1rem;
+}
+
+.landing-gif {
+  background-image: url("../assets/piano-demo.gif");
+  height: 10rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
