@@ -11,17 +11,20 @@
   display: flex;
   justify-content: center ;
   height: 87vh;
+  max-width: 1500px;
 }
 
 .landing-container {
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 3rem;
-  background-color: rgba(255,255,255, .7);
+  /* background-color: rgba(255,255,255, .7); */
+  background-color: rgb(250, 250, 210, .5);
   width: 30%;
   height: 22rem;
-  border-radius: 10px;
+  border-radius: 13px;
   margin-right: 10%;
+  padding-left: 4rem;
 }
 
 .landing-info {
@@ -36,6 +39,7 @@
 .title {
   position: relative;
   top: 2rem;
+  right: 1rem;
   font-size: 6rem;
 }
 
@@ -50,7 +54,7 @@
   padding: 1rem;
   border: 0px solid grey;
   position: relative;
-  top: 2.5rem;
+  top: 7rem;
   transition: ease-in-out all 0.2s;
 
 }
