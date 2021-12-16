@@ -9,18 +9,29 @@
   background-size: cover;
   background-repeat: no-repeat; */
   display: flex;
-  justify-content: center;
+  justify-content: center ;
   height: 87vh;
+  /* max-width: 1500px; */
+  text-align: center;
 }
 
 .landing-container {
+  /* text-align: left; */
   text-align: center;
   position: relative;
   top: 3rem;
-  background-color: rgba(255,255,255, .7);
-  width: 30rem;
-  height: 22rem;
-  border-radius: 10px;
+  /* background-color: rgba(255,255,255, .7); */
+  background-color: rgb(250, 250, 210, .5);
+  width: 30%;
+  height: 24rem;
+  border-radius: 13px;
+  margin-right: 10%;
+  /* padding-left: 5rem; */
+}
+
+.landing-info {
+  width: 30%;
+  margin-top: 2rem;
 }
 
 .mt-2 {
@@ -30,6 +41,7 @@
 .title {
   position: relative;
   top: 2rem;
+  /* right: 1rem; */
   font-size: 6rem;
 }
 
@@ -39,10 +51,80 @@
 }
 
 .get-started {
-  background-color: lightgoldenrodyellow;
-  border-radius: 5px;
-  padding: 1rem;
-  border: 0px solid grey;
+  /* background-color: lightgoldenrodyellow; */
+  background-color: white;
+  border-radius: 30px;
+  padding: .75rem 1rem;
+  border: 2px solid white;
   position: relative;
-  top: 2.5rem;
+  top: 7rem;
+  transition: ease-in-out all 0.2s;
+  box-shadow: lightpink 0 0 3px;
+
+}
+
+.get-started:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in-out all 0.2s;
+  box-shadow: lightpink 1px 1px 4px;
+  /* background-color: rgba(255,255,255, 0); */
+  background-color: lightpink;
+}
+
+.row {
+  display: flex;
+}
+
+.circle {
+  height: 130px;
+  width: 130px;
+  border: solid lightgoldenrodyellow 5px;
+  border-radius: 50%;
+  background-size: cover;
+
+
+}
+
+.img-1 {
+  background-image: url("../assets/react.jpg");
+  background-position: center;
+  background-size: 240%;
+}
+
+.img-2 {
+  background-image: url("../assets/keyboard.jpg");
+  background-position: center;
+
+}
+
+.img-3 {
+  background-image: url("../assets/kushol-h.jpg");
+  background-position: 35% 0;
+
+}
+
+.circles {
+  justify-content: space-around;
+  position: relative;
+  /* right: 1rem; */
+}
+
+
+
+.info {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-gif {
+  background-image: url("../assets/piano-demo.gif");
+  height: 15rem;
+  width: 20rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

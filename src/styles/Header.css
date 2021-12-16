@@ -21,6 +21,11 @@
   margin-right: 3vw;
 }
 
+.navbar-items:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .pac{
   font-family: 'Pacifico';
 }

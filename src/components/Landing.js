@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Landing.css';
-
+import reactLogo from '../assets/react.jpg';
 
 export default function Landing (props) {
 
@@ -15,6 +15,26 @@ export default function Landing (props) {
         >
           Get Started
         </button>
+      </div>
+      <div className="landing-info">
+        <div className="row circles">
+          <div className="circle img-1"></div>
+          <div className="circle img-3"></div>
+          <div className="circle img-2"></div>
+        </div>
+        <div className="info">
+          <p>
+            Melody is a piano web app powered by react.
+          </p>
+          <p>
+          This web app was a place for me to bring my passion for music and front end development together.
+          </p>
+        </div>
+        <div className="flex">
+          <div className="landing-gif">
+          </div>
+        </div>
+
       </div>
     </div>
 

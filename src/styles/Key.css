@@ -40,7 +40,7 @@
   position: relative;
   top: .5rem;
   border-radius: 5px;
-  border: black solid 2px;
+  border: black solid 1px;
   color: black;
 }
 
@@ -54,7 +54,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  border: white solid 2px;
+  border: white solid 1px;
   color: white;
 
 }
