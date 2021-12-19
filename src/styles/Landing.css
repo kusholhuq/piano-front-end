@@ -79,6 +79,7 @@
 .circle {
   height: 130px;
   width: 130px;
+  /* border: solid lightgoldenrodyellow 5px; */
   border: solid lightgoldenrodyellow 5px;
   border-radius: 50%;
   background-size: cover;
