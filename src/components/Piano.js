@@ -66,7 +66,6 @@ class Piano extends React.Component {
       pressedKeys: updatedPressedKeys
     })
     this.playNote(KEY_TO_NOTE[key]);
-    console.log(note)
   }
 
   handleMouseUp = (note) => {
@@ -78,11 +77,6 @@ class Piano extends React.Component {
         pressedKeys: updatedPressedKeys
       })
     }
-    // if(index > -1){
-    //   this.setState(state => ({
-    //     pressedKeys: state.pressedKeys.splice(index, 1)
-    //   }))
-    // }
   }
 
 
