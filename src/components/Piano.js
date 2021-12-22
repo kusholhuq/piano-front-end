@@ -1,7 +1,7 @@
 import React from 'react';
 import { Key } from './Key';
 import '../styles/Piano.css';
-import { NOTES, VALID_KEYS, KEY_TO_NOTE } from '../global/constants';
+import { NOTES, VALID_KEYS, KEY_TO_NOTE, NOTE_TO_KEY } from '../global/constants';
 
 class Piano extends React.Component {
 
@@ -52,6 +52,40 @@ class Piano extends React.Component {
     // }
   }
 
+  handleMouseDown = (note) => {
+    // if (event.repeat) {
+    //   return;
+    // }
+    // const key = event.key;
+    const key = (NOTE_TO_KEY[note]);
+    const updatedPressedKeys = [...this.state.pressedKeys];
+    if (!updatedPressedKeys.includes(key) && VALID_KEYS.includes(key)) {
+      updatedPressedKeys.push(key);
+    }
+    this.setState({
+      pressedKeys: updatedPressedKeys
+    })
+    this.playNote(KEY_TO_NOTE[key]);
+    console.log(note)
+  }
+
+  handleMouseUp = (note) => {
+    const index = this.state.pressedKeys.indexOf(NOTE_TO_KEY[note]);
+    if (index > -1) {
+      const updatedPressedKeys = [...this.state.pressedKeys];
+      updatedPressedKeys.splice(index, 1);
+      this.setState({
+        pressedKeys: updatedPressedKeys
+      })
+    }
+    // if(index > -1){
+    //   this.setState(state => ({
+    //     pressedKeys: state.pressedKeys.splice(index, 1)
+    //   }))
+    // }
+  }
+
+
   componentDidMount = () => {
     window.addEventListener('keydown', this.handleKeyDown);
     window.addEventListener('keyup', this.handleKeyUp);
@@ -70,6 +104,8 @@ class Piano extends React.Component {
           key={index}
           note={note}
           pressedKeys={this.state.pressedKeys}
+          handleMouseDown={this.handleMouseDown}
+          handleMouseUp={this.handleMouseUp}
         />
       );
     })
@@ -89,24 +125,6 @@ class Piano extends React.Component {
       <p>You can use your keyboard to press the piano keys</p>
     )
 
-
-    // const instructionKeys = (
-    //   <div className="instructionKeys">
-    //     <div className="box upKey">Z</div>
-    //     <div className="box upKey">S</div>
-    //     <div className="box upKey">X</div>
-    //     <div className="box upKey">D</div>
-    //     <div className="box upKey">C</div>
-    //     <div className="box upKey">V</div>
-    //     <div className="box upKey">G</div>
-    //     <div className="box upKey">B</div>
-    //     <div className="box upKey">H</div>
-    //     <div>N</div>
-    //     <div>J</div>
-    //     <div>M</div>
-    //   </div>
-    // )
-
     return (
       <div>
         <div className="instructions">
@@ -115,9 +133,6 @@ class Piano extends React.Component {
         <div className="piano">
           {keys}
         </div>
-        {/* <div className="instructionKeys">
-          {instructionKeys}
-        </div> */}
         <div>
           {audioFiles}
         </div>
