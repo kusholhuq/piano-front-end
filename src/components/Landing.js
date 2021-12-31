@@ -26,11 +26,11 @@ export default function Landing (props) {
           <p>
             Melody is a piano web app powered by react.
           </p>
-          <p>
+          <p className="mb-mobile">
           This web app was a place for me to bring my passion for music and front end development together.
           </p>
         </div>
-        <div className="flex">
+        <div className="flex mb-mobile">
           <div className="landing-gif">
           </div>
         </div>

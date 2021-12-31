@@ -76,4 +76,16 @@
       height: 11vh;
       /* width: 100vw; */
     }
+
+    .slight-bump {
+      position: relative;
+      bottom: 1vh;
+    }
+
+    .smaller-bump {
+      position: relative;
+      bottom: 2vh;
+    }
+
+
 }
