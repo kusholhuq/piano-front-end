@@ -135,7 +135,9 @@
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
+    body {
+          font-size: 1.3rem;
+        }
 }
 
 /* Portrait */
@@ -153,16 +155,25 @@
       border-radius: 13px;
       margin-right: 10%;
       width: 100%;
-      top: 30vh;
+      top: 40vh;
       margin: auto;
       height: 60rem;
     }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+
+    }
+
 
     .title {
       position: relative;
       top: 2rem;
       /* right: 1rem; */
       font-size: 6rem;
+      margin-bottom: 2.5rem;
     }
 
     .sub-title {
