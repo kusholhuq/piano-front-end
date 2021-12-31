@@ -63,6 +63,21 @@
       position: relative;
       bottom: 3vh;
     }
+
+    .slight-bump {
+      position: relative;
+      bottom: 1vh;
+    }
+
+    .smaller-bump {
+      position: relative;
+      bottom: 3vh;
+    }
+
+    .navbar-items {
+      position: relative;
+      bottom:.5rem;
+    }
 }
 
 /* Portrait */

@@ -148,14 +148,12 @@
   and (orientation: portrait) {
     .background {
       flex-direction: column;
-      width: 99vw;
+      width: 100vw;
     }
 
     .landing-container {
-      border-radius: 13px;
-      margin-right: 10%;
       width: 100%;
-      top: 40vh;
+      top: 45vh;
       margin: auto;
       height: 60rem;
     }
@@ -200,5 +198,52 @@
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+
+    .background {
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .landing-container {
+      width: 100%;
+      top: 75vh;
+      margin: auto;
+      height: 60rem;
+    }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+    }
+
+    .title {
+      position: relative;
+      top: 1rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: .5rem;
+    }
+
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      position: relative;
+      top: 80vh;
+      margin: auto;
+    }
+
+    .mb-mobile {
+      margin-bottom: 2rem;
+    }
+
+    .get-started {
+      margin: 1rem;
+    }
 
 }
