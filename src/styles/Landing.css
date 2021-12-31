@@ -150,18 +150,12 @@
     }
 
     .landing-container {
-      /* text-align: left; */
-      /* text-align: center;
-      position: relative;
-      top: 3rem; */
-      width: 30%;
-      height: 24rem;
       border-radius: 13px;
       margin-right: 10%;
-      width: 90%;
-      top: 60vh;
+      width: 100%;
+      top: 30vh;
       margin: auto;
-      height: 30rem;
+      height: 60rem;
     }
 
     .title {
@@ -174,6 +168,14 @@
     .sub-title {
       position: relative;
       top: 1.5rem;
+    }
+
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      position: relative;
+      top: 55vh;
+      margin: auto;
     }
 }
 
