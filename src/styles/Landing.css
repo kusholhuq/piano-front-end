@@ -128,3 +128,60 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .background {
+      flex-direction: column;
+      width: 99vw;
+    }
+
+    .landing-container {
+      /* text-align: left; */
+      /* text-align: center;
+      position: relative;
+      top: 3rem; */
+      width: 30%;
+      height: 24rem;
+      border-radius: 13px;
+      margin-right: 10%;
+      width: 90%;
+      top: 60vh;
+      margin: auto;
+      height: 30rem;
+    }
+
+    .title {
+      position: relative;
+      top: 2rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: 1.5rem;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
