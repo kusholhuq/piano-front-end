@@ -74,5 +74,6 @@
 
     .navbar {
       height: 11vh;
+      /* width: 100vw; */
     }
 }
