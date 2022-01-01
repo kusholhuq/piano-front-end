@@ -121,10 +121,10 @@ class Piano extends React.Component {
 
     return (
       <div>
-        <div className="instructions">
+        <div className="instructions bump">
           {instructions}
         </div>
-        <div className="piano">
+        <div className="piano bump-more">
           {keys}
         </div>
         <div>

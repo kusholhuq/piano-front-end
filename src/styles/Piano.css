@@ -37,7 +37,6 @@
   and (orientation: portrait) {
 
     .piano {
-      transform: scale(1);
       width: 95vw;
       margin: auto;
     }
@@ -53,5 +52,20 @@
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+
+    .piano {
+      margin: auto;
+      justify-content: center;
+    }
+
+    .bump {
+      position: relative;
+      bottom: 12vh;
+    }
+
+    .bump-more {
+      position: relative;
+      bottom: 14vh;
+    }
 
 }
