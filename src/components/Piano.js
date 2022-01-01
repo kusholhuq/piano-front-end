@@ -116,7 +116,7 @@ class Piano extends React.Component {
     });
 
     const instructions = (
-      <p>You can use your keyboard to press the piano keys</p>
+      <p>You can click/tap or use your keyboard to press the piano keys</p>
     )
 
     return (
