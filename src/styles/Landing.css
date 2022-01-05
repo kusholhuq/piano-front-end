@@ -21,7 +21,7 @@
   position: relative;
   top: 3rem;
   /* background-color: rgba(255,255,255, .7); */
-  background-color: rgb(250, 250, 210, .5);
+  background-color: rgb(250, 250, 210, 1);
   width: 30%;
   height: 24rem;
   border-radius: 13px;
@@ -127,4 +127,212 @@
   width: 20rem;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .background {
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .landing-container {
+      width: 100%;
+      top: 15vh;
+      margin: auto;
+      height: 60rem;
+    }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+
+    }
+
+    .title {
+      position: relative;
+      top: 2rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: 1.5rem;
+    }
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      top: 20vh;
+      margin: 1rem auto 3rem auto;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .landing-container{
+      width: 43vw;
+    }
+
+    .title {
+      position: relative;
+      top: 1rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+    .sub-title {
+      position: relative;
+      top: .5rem;
+    }
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+          font-size: 1.3rem;
+        }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .background {
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .landing-container {
+      width: 100%;
+      top: 45vh;
+      margin: auto;
+      height: 60rem;
+    }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+
+    }
+
+
+    .title {
+      position: relative;
+      top: 2rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: 1.5rem;
+    }
+
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      position: relative;
+      top: 55vh;
+      margin: auto;
+    }
+
+    .mb-mobile {
+      margin-bottom: 2rem;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .background {
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .landing-container {
+      width: 100%;
+      top: 75vh;
+      margin: auto;
+      height: 60rem;
+    }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+    }
+
+    .title {
+      position: relative;
+      top: 1rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: .5rem;
+    }
+
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      position: relative;
+      top: 80vh;
+      margin: auto;
+    }
+
+    .mb-mobile {
+      margin-bottom: 2rem;
+    }
+
+    .get-started {
+      margin: 1rem;
+    }
+
 }

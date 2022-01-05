@@ -18,3 +18,104 @@
   justify-content: center;
   margin-bottom: 1rem;
 }
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .piano {
+      width: 95vw;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .instructions {
+      text-align: center;
+      width: 70vw;
+      margin: 2rem auto;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+.piano {
+      width: 95vw;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .instructions {
+      text-align: center;
+      width: 70vw;
+      margin: 1rem auto;
+    }
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .piano {
+      width: 95vw;
+      margin: auto;
+    }
+
+    .instructions {
+      text-align: center;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .piano {
+      margin: auto;
+      justify-content: center;
+    }
+
+    .bump {
+      position: relative;
+      bottom: 12vh;
+    }
+
+    .bump-more {
+      position: relative;
+      bottom: 14vh;
+    }
+
+}

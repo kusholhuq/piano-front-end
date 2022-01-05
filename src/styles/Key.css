@@ -27,7 +27,9 @@
 }
 
 .key.pressed, .key.flat.pressed {
-  background-color: #00d8ff;
+  /* background-color: #00d8ff; */
+  background-color: lightpink;
+
 }
 
 .button {
