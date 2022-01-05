@@ -194,6 +194,27 @@
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .landing-container{
+      width: 43vw;
+    }
+
+    .title {
+      position: relative;
+      top: 1rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+    .sub-title {
+      position: relative;
+      top: .5rem;
+    }
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+    }
+
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
