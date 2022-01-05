@@ -36,6 +36,17 @@
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .piano {
+      width: 95vw;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .instructions {
+      text-align: center;
+      width: 70vw;
+      margin: 2rem auto;
+    }
 }
 
 /* Landscape */
@@ -44,7 +55,17 @@
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
+.piano {
+      width: 95vw;
+      margin: auto;
+      justify-content: center;
+    }
 
+    .instructions {
+      text-align: center;
+      width: 70vw;
+      margin: 1rem auto;
+    }
 }
 
 
