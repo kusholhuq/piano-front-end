@@ -146,6 +146,45 @@
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .background {
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .landing-container {
+      width: 100%;
+      top: 15vh;
+      margin: auto;
+      height: 60rem;
+    }
+
+    .get-started {
+      padding: .75rem 1rem;
+      top: 0;
+      margin: 2rem;
+
+    }
+
+    .title {
+      position: relative;
+      top: 2rem;
+      /* right: 1rem; */
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .sub-title {
+      position: relative;
+      top: 1.5rem;
+    }
+    .landing-info {
+      width: 90%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      top: 20vh;
+      margin: 1rem auto 3rem auto;
+    }
 }
 
 /* Landscape */
