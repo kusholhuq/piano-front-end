@@ -63,13 +63,16 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .navbar {
-
+      height: 11vh;
     }
-    .navbar {
 
+    * {
+      font-size: 1.3rem;
     }
-    .navbar {
 
+    .smaller-bump {
+      position: relative;
+      bottom:1vh;
     }
 }
 
@@ -80,6 +83,13 @@
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    * {
+      font-size: 1.3rem;
+    }
+    .smaller-bump {
+      position: relative;
+      bottom:2vh;
+    }
 }
 
 
