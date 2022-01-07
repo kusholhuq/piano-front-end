@@ -21,7 +21,7 @@ https://melody.kusholhuq.com
 
 ## Preview
 
-<img src="js-hackathon-olympics/src/images/demosmaller.gif">
+<img src="src/assets/piano-preview.gif">
 
 ## Getting Started
 #### 1. Clone the repository and navigate to the directory
